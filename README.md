@@ -19,5 +19,8 @@ El programa está organizado en 5 funciones con responsabilidades separadas, má
 ## Instalación y uso
 
 1. Clona el repositorio y entra a la carpeta del proyecto
-2. Ejecuta el programa: python main.py
+2. Ejecuta el programa:
+
+python main.py
+
 3. Usa el menú interactivo para agregar gastos, consultarlos, o guardarlos en archivo.

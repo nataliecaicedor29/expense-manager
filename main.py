@@ -4,7 +4,17 @@ expenses = []
 def add_expense():
     category = input("Categoria de gasto: ")
     description = input("Descripción del gasto: ")
-    amount = float(input("Costo del gasto: "))
+    while True:
+        amount_input = input("Costo del gasto (o '0' para volver): ")
+        if amount_input == "0":
+            return
+            
+        try:
+            amount = float(amount_input)
+            break
+        except ValueError: 
+            print("Debes ingresar un valor numérico")
+    
     new_expense = {"category": category, "description": description, "amount": amount}
     expenses.append(new_expense)
 
